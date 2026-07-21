@@ -1,26 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Francesco Rosini</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Francesco Rosini | Theoretical Particle Physics</title>
+
+<style>
+
+:root{
+    --primary:#003366;
+    --secondary:#005792;
+    --light:#f5f7fa;
+    --text:#222;
+    --accent:#0a8754;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height:1.7;
+    color:var(--text);
+    background:white;
+}
+
+header{
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:white;
+    padding:40px 10%;
+}
+
+nav{
+    display:flex;
+    justify-content:flex-end;
+    gap:25px;
+    margin-bottom:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.hero{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:40px;
+}
+
+.profile-pic{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid white;
+}
+
+.hero-text h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero-text h2{
+    font-size:1.2rem;
+    font-weight:400;
+    opacity:0.95;
+}
+
+.social{
+    margin-top:20px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.social a{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    text-decoration:none;
+    color:white;
+    border:1px solid rgba(255,255,255,0.3);
+    padding:10px 15px;
+    border-radius:8px;
+}
+
+.social a:hover{
+    background:rgba(255,255,255,0.15);
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:70px 10%;
+}
+
+section h2{
+    color:var(--primary);
+    margin-bottom:20px;
+    border-bottom:2px solid var(--primary);
+    padding-bottom:10px;
+}
+
+.research-list{
+    padding-left:25px;
+}
+
+.publication{
+    margin-bottom:20px;
+    padding:15px;
+    background:var(--light);
+    border-left:4px solid var(--primary);
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:var(--light);
+    color:#666;
+}
+
+.button{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 20px;
+    background:var(--primary);
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.button:hover{
+    background:var(--secondary);
+}
+
+</style>
 </head>
 
 <body>
 
+<header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#publications">Publications</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+
+<img src="profile.jpg" alt="Francesco Rosini" class="profile-pic">
+
+<div class="hero-text">
+
 <h1>Francesco Rosini</h1>
 
-<p>PhD Student in Theoretical Particle Physics</p>
+<h2>PhD Student in Theoretical Particle Physics</h2>
 
 <p>
-Research interests:
+Research in baryon form factors, charmonium decays,
+dispersion relations and QCD phenomenology.
 </p>
 
-<ul>
-  <li>Baryon form factors</li>
-  <li>Charmonium decays</li>
-  <li>Dispersion relations</li>
-  <li>QCD phenomenology</li>
+<div class="social">
+
+<a href="https://orcid.org/0009-0009-0080-9997" target="_blank">
+ORCID
+</a>
+
+<a href="https://inspirehep.net/authors/2764815" target="_blank">
+INSPIRE HEP
+</a>
+
+<a href="https://github.com/FRosINFN" target="_blank">
+GitHub
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a PhD student working in theoretical particle physics.
+My research focuses on baryon electromagnetic form factors,
+hyperon production, charmonium decays into baryon–antibaryon
+pairs, and dispersion-theoretical methods.
+</p>
+
+<p>
+I am particularly interested in understanding the interplay
+between electromagnetic and strong interactions in heavy
+quarkonium decays and in extracting information on hadronic
+dynamics from experimental data.
+</p>
+
+</section>
+
+<section id="research">
+
+<h2>Research Interests</h2>
+
+<ul class="research-list">
+
+<li>Baryon electromagnetic form factors</li>
+
+<li>Hyperon production in electron–positron annihilation</li>
+
+<li>Charmonium decays into baryon–antibaryon pairs</li>
+
+<li>Dispersion relations and analyticity</li>
+
+<li>QCD phenomenology</li>
+
+<li>Hadronic final-state interactions</li>
+
 </ul>
+
+</section>
+
+<section id="publications">
+
+<h2>Publications</h2>
+
+<p>
+The complete and up-to-date publication list is available on
+INSPIRE.
+</p>
+
+<a class="button"
+href="https://inspirehep.net/authors/2764815"
+target="_blank">
+View INSPIRE Profile
+</a>
+
+<br><br>
+
+<div class="publication">
+<strong>Publication list</strong><br>
+Add here your most important papers manually, or link directly
+to INSPIRE for automatic updates.
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>
+Email: your.email@institution.edu
+</p>
+
+<p>
+ORCID:
+<a href="https://orcid.org/0009-0009-0080-9997">
+0009-0009-0080-9997
+</a>
+</p>
+
+<p>
+INSPIRE:
+<a href="https://inspirehep.net/authors/2764815">
+Author Profile
+</a>
+</p>
+
+<p>
+GitHub:
+<a href="https://github.com/FRosINFN">
+FRosINFN
+</a>
+</p>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Francesco Rosini
+</p>
+
+</footer>
 
 </body>
 </html>
