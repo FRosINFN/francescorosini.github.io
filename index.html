@@ -1,352 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Francesco Rosini | Theoretical Particle Physics</title>
+  <title>Francesco Rosini | Theoretical Particle Physics</title>
 
-<style>
+  <meta name="description" content="Francesco Rosini, PhD student in Physics at the University of Perugia. Research on baryon form factors, charmonium decays and QCD phenomenology.">
 
-:root{
-    --primary:#003366;
-    --secondary:#005792;
-    --light:#f5f7fa;
-    --text:#222;
-    --accent:#0a8754;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-body{
-    font-family:"Helvetica Neue",Arial,sans-serif;
-    line-height:1.7;
-    color:var(--text);
-    background:white;
-}
-
-#contact a,
-#contact a:visited,
-#contact a:hover,
-#contact a:active{
-    color: var(--secondary);
-}
-
-#contact a{
-    text-decoration:none;
-}
-
-#contact a:hover{
-    text-decoration:underline;
-}
-
-header{
-    background:linear-gradient(135deg,var(--primary),var(--secondary));
-    color:white;
-    padding:40px 10%;
-}
-
-nav{
-    display:flex;
-    justify-content:flex-end;
-    gap:25px;
-    margin-bottom:30px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:600;
-}
-
-nav a:hover{
-    text-decoration:underline;
-}
-
-.hero{
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    gap:40px;
-}
-
-.profile-container{
-    width:250px;
-    height:250px;
-
-    background:white;
-    border-radius:50%;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    box-shadow:0 8px 25px rgba(0,0,0,0.25);
-
-    flex-shrink:0;
-}
-
-.profile-pic{
-    width:220px;
-    height:220px;
-    border-radius:50%;
-    object-fit:cover;
-}
-
-.hero-text h1{
-    font-size:3rem;
-    margin-bottom:10px;
-}
-
-.hero-text h2{
-    font-size:1.2rem;
-    font-weight:400;
-    opacity:0.95;
-    margin-bottom:15px;
-}
-
-.social{
-    margin-top:20px;
-    display:flex;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-.social a{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    text-decoration:none;
-    color:white;
-    border:1px solid rgba(255,255,255,0.3);
-    padding:10px 15px;
-    border-radius:8px;
-    transition:0.3s;
-}
-
-.social a:hover{
-    background:rgba(255,255,255,0.15);
-}
-
-section{
-    max-width:1100px;
-    margin:auto;
-    padding:70px 10%;
-}
-
-section h2{
-    color:var(--primary);
-    margin-bottom:20px;
-    border-bottom:2px solid var(--primary);
-    padding-bottom:10px;
-}
-
-.research-list{
-    padding-left:25px;
-}
-
-.publication{
-    margin-bottom:20px;
-    padding:15px;
-    background:var(--light);
-    border-left:4px solid var(--primary);
-}
-
-footer{
-    text-align:center;
-    padding:40px;
-    background:var(--light);
-    color:#666;
-}
-
-.button{
-    display:inline-block;
-    margin-top:15px;
-    padding:12px 20px;
-    background:var(--primary);
-    color:white;
-    text-decoration:none;
-    border-radius:6px;
-    transition:0.3s;
-}
-
-.button:hover{
-    background:var(--secondary);
-}
-
-@media (max-width: 768px){
-
-    .hero{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    nav{
-        justify-content:center;
-        flex-wrap:wrap;
-    }
-
-    .hero-text h1{
-        font-size:2.2rem;
-    }
-}
-
-</style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="logo">FR</div>
 
-<nav>
-<a href="#about">About</a>
-<a href="#research">Research</a>
-<a href="#publications">Publications</a>
-<a href="#contact">Contact</a>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#research">research</a></li>
+      <li><a href="#affiliations">affiliations</a></li>
+      <li><a href="#education">education</a></li>
+      <li><a href="#publications">publications</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </div>
 </nav>
 
-<div class="hero">
+<section id="hero">
 
-<div class="profile-container">
-    <img src="images/photo_CV.png"
-         alt="Francesco Rosini"
-         class="profile-pic">
-</div>
+  <div class="hero-content">
 
-<div class="hero-text">
+    <p class="hero-greeting">Hi, I'm</p>
 
-<h1>Francesco Rosini</h1>
+    <h1 class="hero-name">
+      Francesco Rosini
+    </h1>
 
-<h2>PhD Student in Theoretical Particle Physics</h2>
+    <h2 class="hero-title">
+      <span id="typed-title"></span><span class="cursor">|</span>
+    </h2>
 
-<p>
-Research in baryon form factors, charmonium decays,
-dispersion relations and QCD phenomenology.
-</p>
+    <p class="hero-description">
+      PhD student in Physics at the University of Perugia,
+      working on baryon form factors, charmonium decays,
+      dispersion relations and QCD phenomenology.
+    </p>
 
-<div class="social">
+    <div class="hero-links">
 
-<a href="https://orcid.org/0009-0009-0080-9997" target="_blank">
-ORCID
-</a>
+      <a href="https://orcid.org/0009-0009-0080-9997"
+         target="_blank"
+         class="btn">
+         ORCID
+      </a>
 
-<a href="https://inspirehep.net/authors/2764815" target="_blank">
-INSPIRE HEP
-</a>
+      <a href="https://inspirehep.net/authors/2764815"
+         target="_blank"
+         class="btn">
+         INSPIRE
+      </a>
 
-<a href="https://github.com/FRosINFN" target="_blank">
-GitHub
-</a>
+      <a href="https://github.com/FRosINFN"
+         target="_blank"
+         class="btn">
+         GitHub
+      </a>
 
-<a href="https://it.linkedin.com/in/francesco-rosini" target="_blank">
-LinkedIn
-</a>
+    </div>
 
-</div>
+  </div>
 
-</div>
+  <div class="hero-photo">
+      <img src="images/photo_CV.png" alt="Francesco Rosini">
+  </div>
 
-</div>
-
-</header>
+</section>
 
 <section id="about">
 
-<h2>About Me</h2>
+  <div class="section-inner">
 
-<p>
-I am a PhD student working in theoretical particle physics.
-My research focuses on baryon electromagnetic form factors,
-hyperon production, charmonium decays into baryon–antibaryon pairs,
-and dispersion-relations methods.
-</p>
+    <h2 class="section-title">About</h2>
+
+    <p>
+      I am a PhD student in Physics at the University of Perugia.
+      My research focuses on the study of baryon electromagnetic
+      form factors in the time-like region, hadronic structure,
+      charmonium decays into baryon-antibaryon pairs, and
+      dispersion-theoretical approaches to strong interactions.
+    </p>
+
+  </div>
 
 </section>
 
 <section id="research">
 
-<h2>Research Interests</h2>
+  <div class="section-inner">
 
-<ul class="research-list">
+    <h2 class="section-title">Research</h2>
 
-<li>Baryon electromagnetic form factors</li>
+    <p>
+      My current research is centered on baryon form factors and
+      their connection to hadron structure, analyticity,
+      dispersion relations and experimental measurements from
+      modern particle physics facilities.
+    </p>
 
-<li>Hyperon production in electron–positron annihilation</li>
+    <p>
+      I am also interested in charmonium decays,
+      QCD phenomenology, hadronic final-state interactions,
+      and the interplay between strong and electromagnetic
+      amplitudes.
+    </p>
 
-<li>Charmonium decays into baryon–antibaryon pairs</li>
+  </div>
 
-<li>Dispersion relations and analyticity</li>
+</section>
 
-<li>QCD phenomenology</li>
+<section id="affiliations">
 
-<li>Hadronic final-state interactions</li>
+  <div class="section-inner">
 
-</ul>
+    <h2 class="section-title">Affiliations</h2>
+
+    <div class="card">
+      <h3>INFN</h3>
+      <p>National Institute for Nuclear Physics</p>
+    </div>
+
+    <div class="card">
+      <h3>University of Perugia</h3>
+      <p>Department of Physics and Geology</p>
+    </div>
+
+    <div class="card">
+      <h3>BESIII Collaboration</h3>
+
+      <p>
+        International collaboration operating the BESIII detector
+        at BEPCII in Beijing.
+      </p>
+
+      <a href="https://bes3.ihep.ac.cn/"
+         target="_blank">
+         Visit BESIII
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="education">
+
+  <div class="section-inner">
+
+    <h2 class="section-title">Education</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+          <h3>PhD in Physics</h3>
+          <p>University of Perugia & INFN</p>
+          <span>2023 – Present</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+          <h3>MSc in Physics</h3>
+          <p>University of Perugia</p>
+          <span>2021 – 2023</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+          <h3>BSc in Physics</h3>
+          <p>University of Perugia</p>
+          <span>2018 – 2021</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
 <section id="publications">
 
-<h2>Publications</h2>
+  <div class="section-inner">
 
-<p>
-The complete and up-to-date publication list is available on INSPIRE.
-</p>
+    <h2 class="section-title">Publications</h2>
 
-<a class="button"
-href="https://inspirehep.net/authors/2764815"
-target="_blank">
-View INSPIRE Profile
-</a>
+    <p>
+      The complete and continuously updated publication list
+      is available through INSPIRE.
+    </p>
+
+    <a class="btn"
+       href="https://inspirehep.net/authors/2764815"
+       target="_blank">
+       View Publications
+    </a>
+
+  </div>
 
 </section>
 
 <section id="contact">
 
-<h2>Contact</h2>
+  <div class="section-inner">
 
-<p>
-Email:
-<a href="mailto:francesco.rosini@pg.infn.it">
-francesco.rosini@pg.infn.it
-</a>
-</p>
+    <h2 class="section-title">Contact</h2>
 
-<p>
-ORCID:
-<a href="https://orcid.org/0009-0009-0080-9997">
-0009-0009-0080-9997
-</a>
-</p>
+    <p>
+      Email:
+      <a href="mailto:francesco.rosini@pg.infn.it">
+      francesco.rosini@pg.infn.it
+      </a>
+    </p>
 
-<p>
-INSPIRE:
-<a href="https://inspirehep.net/authors/2764815">
-Francesco Rosini
-</a>
-</p>
+    <p>
+      ORCID:
+      <a href="https://orcid.org/0009-0009-0080-9997">
+      0009-0009-0080-9997
+      </a>
+    </p>
 
-<p>
-GitHub:
-<a href="https://github.com/FRosINFN">
-FRosINFN
-</a>
-</p>
+    <p>
+      INSPIRE:
+      <a href="https://inspirehep.net/authors/2764815">
+      Author Profile
+      </a>
+    </p>
+
+    <p>
+      GitHub:
+      <a href="https://github.com/FRosINFN">
+      FRosINFN
+      </a>
+    </p>
+
+  </div>
 
 </section>
 
 <footer>
-
-<p>
-© 2026 Francesco Rosini
-</p>
-
+  <p>© 2026 Francesco Rosini</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
