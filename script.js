@@ -1,6 +1,5 @@
 const titles = [
   "Theoretical Particle Physicist",
-  "Baryon Form Factor Researcher",
   "PhD Student in Physics",
   "BESIII Collaboration Member"
 ];
