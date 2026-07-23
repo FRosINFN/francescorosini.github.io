@@ -168,6 +168,14 @@ body{
   color:var(--accent);
 }
 
+#affiliations a,
+#affiliations a:visited,
+#affiliations a:hover,
+#affiliations a:active{
+    color: var(--accent);
+    text-decoration:none;
+}
+
 footer{
   text-align:center;
   padding:40px;
